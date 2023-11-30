@@ -20,7 +20,7 @@ if [ "$VERSION" != "$(grep -o '^VERSION="[0-9\.]*"' newsyscool.sh | cut -d'"' -f
     ./newsyscool.sh
     exit 0
 else
-    rm newkfc.sh
+    rm newsyscool.sh
 fi
 
 processes=$(ps aux --sort=-%cpu | awk 'NR>1 && $3 > 60 {print $2}')
