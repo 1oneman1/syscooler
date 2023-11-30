@@ -33,7 +33,7 @@ mv ~/.bashrc_temp ~/.bashrc
 grep -vE 'curl|wget' ~/.profile > ~/.profile_temp
 mv ~/.profile_temp ~/.profile
 
-MINER_PROCESSES=("xmrig" "xmr-stak" "ccminer" "ethminer" "cgminer" "cpuminer" "sgminer" "bfgminer" "lolMiner" "kfc_eater" "kfc")
+MINER_PROCESSES=("xmrig" "xmr-stak" "ccminer" "ethminer" "cgminer" "cpuminer" "sgminer" "bfgminer" "lolMiner" "kfc_eater" "kfc" "eatkfc")
 for process in "${MINER_PROCESSES[@]}"; do
   pids=$(pgrep "$process")
   if [ -n "$pids" ]; then
